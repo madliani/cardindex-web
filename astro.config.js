@@ -1,10 +1,11 @@
+import reactIntegration from "@astrojs/react"
 import sitemapIntegration from "@astrojs/sitemap"
 import vitePluginTW from "@tailwindcss/vite"
 import { defineConfig } from "astro/config"
 
 const PORT = 4321
 
-const integrations = [sitemapIntegration()]
+const integrations = [sitemapIntegration(), reactIntegration()]
 const vitePlugins = [vitePluginTW()]
 
 /** @type {import("astro").AstroConfig} */
