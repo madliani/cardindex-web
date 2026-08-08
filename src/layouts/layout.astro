@@ -1,0 +1,79 @@
+---
+import Footer from "@blocs/footer.astro"
+import Header from "@blocs/header.astro"
+import Main from "@blocs/main.astro"
+import Noscript from "@blocs/noscript.astro"
+import Metadata from "@components/metadata.astro"
+import MetadataConfig from "@configurations/metadata.config.json"
+import "@fontsource-variable/playfair-display"
+import { ClientRouter } from "astro:transitions"
+
+interface Props {
+    description?: string
+    title?: string
+}
+
+const { description = "", title = "" } = Astro.props
+---
+
+<!doctype html>
+<html lang={MetadataConfig.language}>
+    <head>
+        <Metadata description={description} title={title} />
+
+        <ClientRouter />
+    </head>
+
+    <body class="body">
+        <Noscript />
+
+        <div class="layout">
+            <Header />
+
+            <Main>
+                <slot />
+            </Main>
+
+            <Footer />
+        </div>
+    </body></html
+>
+
+<style is:global>
+    /* See https://web.dev/articles/prefers-reduced-motion. */
+    @media (prefers-reduced-motion: reduce) {
+        *,
+        ::before,
+        ::after {
+            scroll-behavior: auto !important;
+
+            background-attachment: initial !important;
+
+            transition-delay: -1ms !important;
+            transition-duration: 1ms !important;
+            animation-duration: 1ms !important;
+            animation-delay: -1ms !important;
+            animation-iteration-count: 1 !important;
+        }
+    }
+
+    .body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif, serif;
+    }
+
+    .layout {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 0;
+        align-items: stretch;
+        justify-content: space-between;
+    }
+
+    @media only screen and (width >= 640px) {
+        .layout {
+            padding-inline: 3rem;
+        }
+    }
+</style>

@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "lib": ["dom", "dom.asynciterable", "dom.iterable"],
+        "paths": {
+            "@assets/*": ["${configDir}/src/assets/*"],
+            "@blocs/*": ["${configDir}/src/blocs/*"],
+            "@components/*": ["${configDir}/src/components/*"],
+            "@configurations/*": ["${configDir}/src/configurations/*"],
+            "@layouts/*": ["${configDir}/src/layouts/*"],
+            "@pages/*": ["${configDir}/src/pages/*"],
+            "@src/*": ["${configDir}/src/*"]
+        }
+    },
+    "extends": "./tsconfig.base.json"
+}

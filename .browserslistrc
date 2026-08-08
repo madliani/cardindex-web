@@ -1,0 +1,12 @@
+[development]
+defaults and fully supports es6-module
+not ie <= 11
+not op_mini all
+
+[production]
+defaults and fully supports es6-module
+not ie <= 11
+not op_mini all
+
+[ssr]
+maintained node versions

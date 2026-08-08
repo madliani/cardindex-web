@@ -1,0 +1,21 @@
+<header class="header" role="banner">
+    <img alt="CardIndex logo" src="/icons/cardindex-logo.svg" />
+</header>
+
+<style is:global lang="scss">
+    .header {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+
+        min-height: 10svh;
+    }
+
+    @media only screen and (width >= 640px) {
+        .header {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+</style>

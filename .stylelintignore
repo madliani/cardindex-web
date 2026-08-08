@@ -1,0 +1,35 @@
+# Node.js
+node_modules/
+
+# Astro
+.astro/
+dist/
+
+# TypeScript
+.tsbuildinfo
+
+# Stylelint
+.stylelintcache
+
+# pnpm
+pnpm-lock.yaml
+pnpm-workspace.yaml
+
+# AUTHORS
+AUTHORS.txt
+
+# README
+README.md
+
+# JS-based configurations
+*.config.js
+
+# JSON-based configurations
+*.json
+
+# Assets
+assets/
+src/assets/
+
+# Public
+public/

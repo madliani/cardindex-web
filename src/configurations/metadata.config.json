@@ -1,0 +1,32 @@
+{
+    "ati_path": "/icons/apple-touch-icon.png",
+    "author": "madliani",
+    "base_path": "/",
+    "charset": "utf-8",
+    "csp": {
+        "base_uri": ["self"],
+        "connect_src": ["self"],
+        "form_action": ["self"]
+    },
+    "description": "A card index.",
+    "favicon_path": "/icons/favicon.ico",
+    "favicon_svg_path": "/icons/favicon.svg",
+    "is_indexable": true,
+    "is_supported_ie": false,
+    "keywords": "cardindex",
+    "language": "en",
+    "open_graph": {
+        "image_path": "/images/cardindex-homepage.png",
+        "locale": "en_US",
+        "site_name": "cardindex",
+        "type": "website"
+    },
+    "sitemap_path": "/sitemap-index.xml",
+    "theme_color": "#FFFFFF",
+    "title": "CardIndex",
+    "twitter_card": {
+        "card": "summary_large_image",
+        "image_path": "/images/cardindex-homepage.png"
+    },
+    "viewport": { "initial_scale": 1.0, "width": "device-width" }
+}

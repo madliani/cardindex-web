@@ -1,0 +1,96 @@
+{
+    "author": {
+        "email": "unixsocket@hotmail.com",
+        "name": "madliani",
+        "url": "https://madliani-cv.vercel.app/"
+    },
+    "bugs": {
+        "email": "unixsocket@hotmail.com",
+        "url": "https://github.com/madliani/cardindex/issues"
+    },
+    "cpu": [
+        "x64"
+    ],
+    "dependencies": {
+        "@astrojs/check": "0.9.10",
+        "@astrojs/sitemap": "3.7.3",
+        "@fontsource-variable/playfair-display": "5.3.0",
+        "astro": "7.2.0",
+        "axios": "1.19.0",
+        "sass": "1.102.0",
+        "sharp": "0.35.3",
+        "tslib": "2.8.1",
+        "typescript": "6.0.3"
+    },
+    "description": "A React-based client-side part for a full-stack CardIndex application.",
+    "devDependencies": {
+        "@cspell/dict-ru_ru": "2.3.2",
+        "@eslint/js": "10.0.1",
+        "@eslint/json": "2.0.1",
+        "@types/eslint": "9.6.1",
+        "@types/eslint-plugin-jsx-a11y": "6.10.1",
+        "@types/eslint-plugin-security": "3.0.1",
+        "@vitest/eslint-plugin": "1.6.26",
+        "@vitest/ui": "4.1.10",
+        "astro-eslint-parser": "3.0.0",
+        "cspell": "10.0.1",
+        "eslint": "10.8.0",
+        "eslint-import-resolver-typescript": "4.4.5",
+        "eslint-plugin-astro": "3.1.0",
+        "eslint-plugin-compat": "7.0.2",
+        "eslint-plugin-import": "2.32.0",
+        "eslint-plugin-jsx-a11y": "6.10.2",
+        "eslint-plugin-no-secrets": "2.3.3",
+        "eslint-plugin-perfectionist": "5.10.1",
+        "globals": "17.9.0",
+        "happy-dom": "20.11.1",
+        "prettier": "3.9.6",
+        "prettier-plugin-astro": "0.14.1",
+        "stylelint": "17.14.1",
+        "stylelint-config-astro": "2.0.0",
+        "stylelint-config-clean-order": "10.0.0",
+        "stylelint-config-standard-scss": "17.0.0",
+        "stylelint-no-unsupported-browser-features": "8.1.1",
+        "stylelint-order": "8.1.1",
+        "typescript-eslint": "8.66.0",
+        "vitest": "4.1.10"
+    },
+    "engineStrict": false,
+    "engines": {
+        "node": "v26.7.0"
+    },
+    "homepage": "https://github.com/madliani/cardindex/",
+    "keywords": [
+        "astro",
+        "cardindex",
+        "sass",
+        "typescript",
+        "vitest"
+    ],
+    "license": "Proprietary",
+    "name": "cardindex-web",
+    "os": [
+        "linux"
+    ],
+    "private": true,
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/madliani/cardindex.git"
+    },
+    "scripts": {
+        "astro": "astro",
+        "build": "astro build",
+        "check:format": "prettier ./ --ignore-unknown --write",
+        "check:lint": "stylelint ./ && eslint --fix && tsc && astro check",
+        "check:spell": "cspell ./",
+        "serve": "astro dev",
+        "serve:preview": "astro preview",
+        "telemetry:disable": "astro telemetry disable",
+        "test": "vitest run",
+        "test:coverage": "vitest run --coverage",
+        "test:ui": "vitest watch --ui --coverage.enabled=true",
+        "test:watch": "vitest watch"
+    },
+    "type": "module",
+    "version": "0.1.0"
+}

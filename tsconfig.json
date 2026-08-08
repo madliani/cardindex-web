@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "incremental": true,
+        "tsBuildInfoFile": ".tsbuildinfo"
+    },
+    "extends": "./tsconfig.app.json",
+    "include": [],
+    "references": [{ "path": "./tsconfig.astro.json" }]
+}
