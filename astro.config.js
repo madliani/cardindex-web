@@ -1,9 +1,11 @@
 import sitemapIntegration from "@astrojs/sitemap"
+import vitePluginTW from "@tailwindcss/vite"
 import { defineConfig } from "astro/config"
 
 const PORT = 4321
 
 const integrations = [sitemapIntegration()]
+const vitePlugins = [vitePluginTW()]
 
 /** @type {import("astro").AstroConfig} */
 export default defineConfig({
@@ -14,5 +16,7 @@ export default defineConfig({
     output: "static",
     prefetch: { defaultStrategy: "tap" },
     server: { host: true, open: true, port: PORT },
-    site: "https://cardindex.vercel.app/"
+    site: "https://cardindex.vercel.app/",
+
+    vite: { plugins: [...vitePlugins] }
 })
