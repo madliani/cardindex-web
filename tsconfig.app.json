@@ -1,5 +1,7 @@
 {
     "compilerOptions": {
+        "jsx": "react-jsx",
+        "jsxImportSource": "react",
         "lib": ["dom", "dom.asynciterable", "dom.iterable"],
         "paths": {
             "@assets/*": ["${configDir}/src/assets/*"],
@@ -10,7 +12,14 @@
             "@pages/*": ["${configDir}/src/pages/*"],
             "@react/*": ["${configDir}/react/*"],
             "@src/*": ["${configDir}/src/*"]
-        }
+        },
+        "types": ["astro/astro-jsx", "astro/client", "react", "react-dom"]
     },
-    "extends": "./tsconfig.base.json"
+    "extends": "./tsconfig.base.json",
+    "include": [
+        "${configDir}/.astro/types.d.ts",
+        "${configDir}/src/**/*.astro",
+        "${configDir}/react/**/*.ts",
+        "${configDir}/react/**/*.tsx"
+    ]
 }

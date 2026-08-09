@@ -3,7 +3,6 @@
         "incremental": true,
         "tsBuildInfoFile": ".tsbuildinfo"
     },
-    "extends": "./tsconfig.app.json",
     "include": [],
-    "references": [{ "path": "./tsconfig.astro.json" }]
+    "references": [{ "path": "./tsconfig.app.json" }]
 }
