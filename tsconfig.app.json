@@ -10,7 +10,7 @@
             "@configurations/*": ["${configDir}/src/configurations/*"],
             "@layouts/*": ["${configDir}/src/layouts/*"],
             "@pages/*": ["${configDir}/src/pages/*"],
-            "@react/*": ["${configDir}/react/*"],
+            "@react/*": ["${configDir}/src/react/*"],
             "@src/*": ["${configDir}/src/*"]
         },
         "types": ["astro/astro-jsx", "astro/client", "react", "react-dom"]
@@ -19,7 +19,7 @@
     "include": [
         "${configDir}/.astro/types.d.ts",
         "${configDir}/src/**/*.astro",
-        "${configDir}/react/**/*.ts",
-        "${configDir}/react/**/*.tsx"
+        "${configDir}/src/**/*.ts",
+        "${configDir}/src/react/**/*.tsx"
     ]
 }
