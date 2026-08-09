@@ -8,6 +8,7 @@
             "@configurations/*": ["${configDir}/src/configurations/*"],
             "@layouts/*": ["${configDir}/src/layouts/*"],
             "@pages/*": ["${configDir}/src/pages/*"],
+            "@react/*": ["${configDir}/react/*"],
             "@src/*": ["${configDir}/src/*"]
         }
     },

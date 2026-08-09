@@ -5,8 +5,5 @@
     },
     "extends": "./tsconfig.app.json",
     "include": [],
-    "references": [
-        { "path": "./tsconfig.astro.json" },
-        { "path": "./tsconfig.react.json" }
-    ]
+    "references": [{ "path": "./tsconfig.astro.json" }]
 }
