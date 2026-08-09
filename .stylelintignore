@@ -4,6 +4,10 @@ node_modules/
 # Astro
 .astro/
 dist/
+src/**/*.ts
+
+# React
+src/react/**/*.tsx
 
 # TypeScript
 .tsbuildinfo
