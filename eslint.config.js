@@ -82,6 +82,6 @@ export default defineConfig([
         "./dist/",
         "./html/",
         "./node_modules/",
-        "package-lock.json"
+        "./package-lock.json"
     ])
 ])
