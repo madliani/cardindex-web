@@ -1,7 +1,6 @@
 import pluginJS from "@eslint/js"
 import pluginJSON from "@eslint/json"
 import pluginVitest from "@vitest/eslint-plugin"
-import * as astroParser from "astro-eslint-parser"
 import { configs as astroConfigs } from "eslint-plugin-astro"
 import pluginCompat from "eslint-plugin-compat"
 import pluginImport from "eslint-plugin-import"
@@ -50,7 +49,6 @@ export default defineConfig([
     {
         extends: [astroConfigs["flat/recommended"]],
         files: ["**/*.astro"],
-        languageOptions: { parser: astroParser },
         settings: {
             "import/core-modules": [
                 "astro:assets",
