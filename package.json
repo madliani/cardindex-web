@@ -40,7 +40,6 @@
         "@types/react-dom": "19.2.4",
         "@vitest/eslint-plugin": "1.6.26",
         "@vitest/ui": "4.1.10",
-        "astro-eslint-parser": "3.0.0",
         "cspell": "10.0.1",
         "eslint": "10.8.0",
         "eslint-import-resolver-typescript": "4.4.5",
