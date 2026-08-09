@@ -1,0 +1,18 @@
+.card__header {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.card__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+@media (width >= 1080px) {
+    .card {
+        width: 50rem;
+    }
+}
