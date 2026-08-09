@@ -3,6 +3,6 @@
         "incremental": true,
         "tsBuildInfoFile": ".tsbuildinfo"
     },
-    "include": [],
+    "files": [],
     "references": [{ "path": "./tsconfig.app.json" }]
 }
