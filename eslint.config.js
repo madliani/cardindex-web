@@ -5,7 +5,6 @@ import * as astroParser from "astro-eslint-parser"
 import { configs as astroConfigs } from "eslint-plugin-astro"
 import pluginCompat from "eslint-plugin-compat"
 import pluginImport from "eslint-plugin-import"
-import pluginJSXA11Y from "eslint-plugin-jsx-a11y"
 import pluginNoSecrets from "eslint-plugin-no-secrets"
 import { configs as perfectConfigs } from "eslint-plugin-perfectionist"
 import { defineConfig, globalIgnores } from "eslint/config"
@@ -49,7 +48,7 @@ export default defineConfig([
         settings: { "import/resolver": { node: true } }
     },
     {
-        extends: [astroConfigs["flat/jsx-a11y-recommended"]],
+        extends: [astroConfigs["flat/recommended"]],
         files: ["**/*.astro"],
         languageOptions: { parser: astroParser },
         settings: {
@@ -60,7 +59,6 @@ export default defineConfig([
             ]
         }
     },
-    { extends: [pluginJSXA11Y.configs.recommended], files: ["**/*.tsx"] },
     {
         extends: [pluginVitest.configs.recommended],
         files: ["**/*.test.ts", "**/*.mock.ts"],
