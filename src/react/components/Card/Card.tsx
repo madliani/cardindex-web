@@ -1,5 +1,7 @@
-import { Card as HCard } from "@heroui/react"
 import type { CardProps } from "@react/components/Card/Card.type"
+
+import { Card as HCard } from "@heroui/react"
+
 import "./Card.style.scss"
 
 const Card = ({ desc, title }: CardProps) => (
