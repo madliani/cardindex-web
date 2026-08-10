@@ -1,3 +1,3 @@
-import type { CardData } from "@api/cards/cards.type"
+import type { Card } from "@api/cards/cards.type"
 
-export type CardProps = Omit<CardData, "id">
+export type CardProps = Omit<Card, "id">
