@@ -1,4 +1,4 @@
-import type { CardData } from "@api/types/Card"
+import type { CardData } from "@api/types/card"
 
 export interface CardListProps {
     cardList: CardData[]
