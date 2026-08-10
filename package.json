@@ -35,7 +35,6 @@
         "@eslint/js": "10.0.1",
         "@eslint/json": "2.0.1",
         "@types/eslint": "9.6.1",
-        "@types/eslint-plugin-security": "3.0.1",
         "@types/react": "19.2.18",
         "@types/react-dom": "19.2.4",
         "@vitest/eslint-plugin": "1.6.26",
