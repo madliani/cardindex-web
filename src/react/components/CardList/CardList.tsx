@@ -1,8 +1,7 @@
 import type { CardListProps } from "@react/components/CardList/CardList.type"
 
 import { Card } from "@react/components/Card/Card"
-
-import "./CardList.style.scss"
+import "@react/components/CardList/CardList.style.scss"
 
 const CardList = ({ cardList }: CardListProps) => (
     <section className="card-list">
