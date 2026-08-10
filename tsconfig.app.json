@@ -4,6 +4,7 @@
         "jsxImportSource": "react",
         "lib": ["dom", "dom.asynciterable", "dom.iterable"],
         "paths": {
+            "@api/*": ["${configDir}/src/api/*"],
             "@assets/*": ["${configDir}/src/assets/*"],
             "@blocs/*": ["${configDir}/src/blocs/*"],
             "@components/*": ["${configDir}/src/components/*"],
