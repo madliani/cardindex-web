@@ -1,5 +1,6 @@
 {
     "compilerOptions": {
+        "composite": true,
         "jsx": "react-jsx",
         "jsxImportSource": "react",
         "lib": ["dom", "dom.asynciterable", "dom.iterable"],
