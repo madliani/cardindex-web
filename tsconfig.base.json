@@ -1,5 +1,6 @@
 {
     "compilerOptions": {
+        "allowArbitraryExtensions": false,
         "allowImportingTsExtensions": false,
         "allowSyntheticDefaultImports": true,
         "allowUnreachableCode": false,
