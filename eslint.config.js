@@ -22,7 +22,7 @@ export default defineConfig([
             pluginImport.flatConfigs.typescript,
             pluginCompat.configs["flat/recommended"]
         ],
-        files: ["*.config.js", "**/*.{astro,ts}"],
+        files: ["*.config.js", "**/*.{astro,ts,tsx}"],
         languageOptions: {
             ecmaVersion: 2022,
             parserOptions: {
