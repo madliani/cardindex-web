@@ -1,6 +1,5 @@
 import pluginJS from "@eslint/js"
 import pluginJSON from "@eslint/json"
-import pluginVitest from "@vitest/eslint-plugin"
 import { configs as astroConfigs } from "eslint-plugin-astro"
 import pluginCompat from "eslint-plugin-compat"
 import pluginImport from "eslint-plugin-import"
@@ -55,13 +54,6 @@ export default defineConfig([
                 "astro:i18n",
                 "astro:transitions"
             ]
-        }
-    },
-    {
-        extends: [pluginVitest.configs.recommended],
-        files: ["**/*.test.ts", "**/*.mock.ts"],
-        languageOptions: {
-            globals: { ...pluginVitest.environments.env.globals }
         }
     },
     {
