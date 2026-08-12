@@ -21,7 +21,6 @@
         "@tailwindcss/vite": "4.3.3",
         "astro": "7.2.0",
         "axios": "1.19.0",
-        "jotai": "2.20.2",
         "react": "19.2.8",
         "react-dom": "19.2.8",
         "sass": "1.102.0",
