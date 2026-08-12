@@ -1,5 +1,10 @@
 ---
 import Layout from "@layouts/layout.astro"
+
+// This route notation is required for React components to work properly.
+import { Cards } from "../react/blocs/Cards/Cards"
 ---
 
-<Layout title="Home" />
+<Layout title="Home">
+    <Cards client:load />
+</Layout>
