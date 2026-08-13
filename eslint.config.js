@@ -11,6 +11,14 @@ import { configs as tsConfigs } from "typescript-eslint"
 
 /** @type {import("eslint/config").Config} */
 export default defineConfig([
+    globalIgnores([
+        "./.astro/",
+        "./coverage/",
+        "./dist/",
+        "./html/",
+        "./node_modules/",
+        "./package-lock.json"
+    ]),
     {
         extends: [
             pluginJS.configs.recommended,
@@ -67,13 +75,5 @@ export default defineConfig([
         files: ["**/*.jsonc"],
         language: "json/jsonc",
         rules: { "json/sort-keys": "error" }
-    },
-    globalIgnores([
-        "./.astro/",
-        "./coverage/",
-        "./dist/",
-        "./html/",
-        "./node_modules/",
-        "./package-lock.json"
-    ])
+    }
 ])
